@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
         String pwd = pwdElt.getText().toString();
         Toast toastSuccess = Toast.makeText(this, "Authentification reussi", Toast.LENGTH_SHORT);
         Toast toastFailure = Toast.makeText(this, "Identifiant/mot de passe incorrect", Toast.LENGTH_SHORT);
-        Intent intentAct2 = new Intent(this, SecondActivity.class);
+       // Intent intentAct2 = new Intent(this, SecondActivity.class);
 
         if(login.equals("noureddine@gmail.com") && pwd.equals("lol123")){
             toastSuccess.show();
-            startActivity(intentAct2);
+        //    startActivity(intentAct2);
         }
         else {
             toastFailure.show();
